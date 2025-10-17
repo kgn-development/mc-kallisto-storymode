@@ -1,8 +1,8 @@
-package li.kallisto.kgntemplatemod
+package li.kallisto.kgnkallistostorymode
 
-import li.kallisto.kgntemplatemod.block.ModBlocks
-import li.kallisto.kgntemplatemod.datagen.ModDataGenerator
-import li.kallisto.kgntemplatemod.item.ModItems
+import li.kallisto.kgnkallistostorymode.block.ModBlocks
+import li.kallisto.kgnkallistostorymode.datagen.ModDataGenerator
+import li.kallisto.kgnkallistostorymode.item.ModItems
 import net.minecraft.resources.ResourceLocation
 import net.neoforged.fml.common.Mod
 import org.apache.logging.log4j.Level
@@ -11,9 +11,9 @@ import org.apache.logging.log4j.Logger
 import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 import thedarkcolour.kotlinforforge.neoforge.forge.runForDist
 
-@Mod(KGNTemplateMod.ID)
-object KGNTemplateMod {
-    const val ID = "kgntemplatemod"
+@Mod(KGNKallistoStorymode.ID)
+object KGNKallistoStorymode {
+    const val ID = "kgnkallistostorymode"
 
     val LOGGER: Logger = LogManager.getLogger(ID)
 

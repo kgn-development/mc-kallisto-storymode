@@ -1,7 +1,7 @@
-package li.kallisto.kgntemplatemod.block
+package li.kallisto.kgnkallistostorymode.block
 
-import li.kallisto.kgntemplatemod.KGNTemplateMod
-import li.kallisto.kgntemplatemod.item.ModItems
+import li.kallisto.kgnkallistostorymode.KGNKallistoStorymode
+import li.kallisto.kgnkallistostorymode.item.ModItems
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
 import net.minecraft.world.item.BlockItem
@@ -13,7 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister
 import java.util.function.Supplier
 
 object ModBlocks {
-    val BLOCKS = DeferredRegister.createBlocks(KGNTemplateMod.ID)
+    val BLOCKS = DeferredRegister.createBlocks(KGNKallistoStorymode.ID)
 
     fun registerBlockWithItem(
         name: String,
@@ -21,9 +21,9 @@ object ModBlocks {
         blockProperties: BlockBehaviour.Properties,
         itemProperties: Item.Properties
     ): DeferredBlock<Block> {
-        val blockKey = ResourceKey.create(Registries.BLOCK, KGNTemplateMod.locate(name))
+        val blockKey = ResourceKey.create(Registries.BLOCK, KGNKallistoStorymode.locate(name))
         blockProperties.setId(blockKey)
-        val itemKey = ResourceKey.create(Registries.ITEM, KGNTemplateMod.locate(name))
+        val itemKey = ResourceKey.create(Registries.ITEM, KGNKallistoStorymode.locate(name))
         itemProperties.useBlockDescriptionPrefix().setId(itemKey)
         val block = BLOCKS.register(name, blockSupplier)
         ModItems.ITEMS.register(name) { _ -> BlockItem(block.get(), itemProperties) }

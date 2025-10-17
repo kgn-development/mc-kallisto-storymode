@@ -1,8 +1,8 @@
-package li.kallisto.kgntemplatemod.datagen.providers
+package li.kallisto.kgnkallistostorymode.datagen.providers
 
-import li.kallisto.kgntemplatemod.KGNTemplateMod
-import li.kallisto.kgntemplatemod.block.ModBlocks
-import li.kallisto.kgntemplatemod.item.ModItems
+import li.kallisto.kgnkallistostorymode.KGNKallistoStorymode
+import li.kallisto.kgnkallistostorymode.block.ModBlocks
+import li.kallisto.kgnkallistostorymode.item.ModItems
 import net.minecraft.client.data.models.BlockModelGenerators
 import net.minecraft.client.data.models.ItemModelGenerators
 import net.minecraft.client.data.models.ModelProvider
@@ -12,7 +12,7 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import java.util.stream.Stream
 
-class ModModelProvider(output: PackOutput) : ModelProvider(output, KGNTemplateMod.ID) {
+class ModModelProvider(output: PackOutput) : ModelProvider(output, KGNKallistoStorymode.ID) {
 
     override fun registerModels(blockModels: BlockModelGenerators, itemModels: ItemModelGenerators) {
 

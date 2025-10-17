@@ -1,6 +1,6 @@
-package li.kallisto.kgntemplatemod.datagen
+package li.kallisto.kgnkallistostorymode.datagen
 
-import li.kallisto.kgntemplatemod.datagen.providers.ModModelProvider
+import li.kallisto.kgnkallistostorymode.datagen.providers.ModModelProvider
 import net.neoforged.neoforge.data.event.GatherDataEvent
 
 object ModDataGenerator {
